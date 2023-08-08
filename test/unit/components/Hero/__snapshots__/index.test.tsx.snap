@@ -1,0 +1,26 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Componente Hero > Renderiza correctamente 1`] = `
+<div>
+  <section
+    class="sc-bcPKhP eYgFmU"
+  >
+    <h1
+      class="hero__title"
+    >
+      Midubooks
+    </h1>
+    <p
+      class="hero__description"
+    >
+      Encontrá todos tus libros deseados
+    </p>
+    <a
+      class="hero__button"
+      href="#"
+    >
+      ¡Comenzá ya!
+    </a>
+  </section>
+</div>
+`;
