@@ -21,15 +21,16 @@ export const StyledContainer = styled.div`
       padding: 1rem 2rem;
       border: 2px solid transparent;
       border-radius: 1rem;
-      &:active {
-        transform: translate(0.4rem, 0.4rem);
-      }
+      display: inline-block;
       &:hover,
       &:focus {
-        transition: box-shadow 0.3s ease;
         border: 2px solid currentColor;
         box-shadow: 0.4rem 0.4rem 0 currentColor;
         outline: none;
+      }
+      &:active {
+        transform: translate(0.4rem, 0.4rem);
+        box-shadow: none;
       }
     }
   }
