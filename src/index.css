@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+  --primary-200: #e7cc90;
+  --primary-400: #feb510;
+  --secondary-400: #788ee5;
+  --black: #090f15;
+
+  --font-xl: 96px;
+  --font-l: 64px;
+  --font-m: 36px;
+  --font-s: 24px;
+  --font-xs: 20px;
+  --font-xxs: 14px;
+
+  --font-heading: "Yeseva One", cursive;
+  --font-body: "Inter", Helvetica, Arial, Sans-serif;
+}
+
+body {
+  background-color: var(--primary-400);
+  font-family: var(--font-body);
+}
