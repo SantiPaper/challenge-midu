@@ -22,6 +22,6 @@
   },
   
   "types":["vite/client","vitest/globals","@types/jest"],
-  "include": ["node","src","tests","**/*.ts", "**/*.tsx",],
+  "include": ["src","tests","**/*.ts", "**/*.tsx",],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
