@@ -1,0 +1,32 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Componente Header > Renderiza header 1`] = `
+<div>
+  <header
+    class="sc-bcPKhP fmzCVp"
+  >
+    <nav>
+      <ul
+        class="header__ul"
+      >
+        <li>
+          <a
+            class="header__link"
+            href="#"
+          >
+            Inicio
+          </a>
+        </li>
+        <li>
+          <a
+            class="header__link"
+            href="#"
+          >
+            Lista de lectura
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+</div>
+`;
