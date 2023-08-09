@@ -11,15 +11,16 @@ html {
   --secondary-400: #788ee5;
   --secondary-200: #9ca9df;
   --black: #090f15;
+  --black-opacity: #5e5e5e;
 
   --font-xl: 96px;
   --font-l: 64px;
-  --font-m: 36px;
+  --font-m: 32px;
   --font-s: 24px;
   --font-xs: 20px;
   --font-xxs: 14px;
 
-  --font-heading: "Yeseva One", cursive;
+  --font-heading: "Yeseva One";
   --font-body: "Inter", Helvetica, Arial, Sans-serif;
 }
 
