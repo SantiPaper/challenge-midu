@@ -26,6 +26,7 @@ export const StyledHero = styled.section`
       font-weight: 500;
       box-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 0.25);
       transition: background-color 0.15s;
+      margin-bottom: 20rem;
 
       &:hover,
       &:focus {
