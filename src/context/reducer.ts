@@ -3,6 +3,7 @@ import type { Reducer, State } from "../types/context";
 export const initialState: State = {
   books: [],
   readingList: [],
+  filteredBooks: [],
 };
 
 export const reducer: Reducer = (state = initialState, action) => {
@@ -11,6 +12,13 @@ export const reducer: Reducer = (state = initialState, action) => {
       return {
         ...state,
         books: action.payload,
+        filteredBooks: action.payload,
+      };
+    }
+    case "GET_BY_GENRE": {
+      return {
+        ...state,
+        filteredBooks: action.payload,
       };
     }
     default:
