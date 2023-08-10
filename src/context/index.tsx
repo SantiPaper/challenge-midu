@@ -1,5 +1,5 @@
 import { createContext, PropsWithChildren, useReducer } from "react";
-import type { Context } from "../types/context";
+import type { Context, Genre } from "../types/context";
 import { reducer, initialState } from "./reducer";
 import { Book } from "../types/books";
 
@@ -15,11 +15,21 @@ export const Provider = ({ children }: PropsWithChildren) => {
     });
   };
 
+  const getByGenre = (genre: Genre) => {
+    dispatch({
+      type: "GET_BY_GENRE",
+      payload: genre
+        ? state.books.filter((book) => book.genre === genre)
+        : state.books,
+    });
+  };
+
   return (
     <BooksContext.Provider
       value={{
         state,
         addBooks,
+        getByGenre,
       }}
     >
       {children}
