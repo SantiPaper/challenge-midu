@@ -13,15 +13,17 @@ export const Books = () => {
             <h2 className="book__title">
               {book.title.length < 25
                 ? book.title
-                : book.title.slice(0, 25).concat("(...)")}
+                : book.title.slice(0, 21).concat("...")}
             </h2>
             <div className="book__container-info">
               <p>{book.author.name}</p>
               <p>{book.year}</p>
             </div>
             <div className="book__container-buttons">
-              <button>Agregar a lista de lectura</button>
-              <button>Ver mas</button>
+              <button className="book__button-ls">
+                Agregar a lista de lectura
+              </button>
+              <button className="book__button-wm">Ver más</button>
             </div>
           </div>
         </article>
