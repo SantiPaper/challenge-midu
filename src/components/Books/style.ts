@@ -4,7 +4,7 @@ export const StyleBookSection = styled.section`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-
+  gap: 4rem 2rem;
   .book {
     &__container {
       display: flex;
@@ -12,7 +12,7 @@ export const StyleBookSection = styled.section`
       width: 60rem;
       background-color: white;
       box-shadow: 0.4rem 0.4rem 0 currentColor;
-      padding: 1rem;
+      padding: 2.4rem 1.7rem;
       border-radius: 1.6rem;
       border: 2px solid var(--black);
     }
@@ -32,6 +32,7 @@ export const StyleBookSection = styled.section`
     &__container-info {
       display: flex;
       gap: 2rem;
+      margin-bottom: 1rem;
     }
     &__container-buttons {
       display: flex;
@@ -59,5 +60,6 @@ export const StyleBookSection = styled.section`
     font-family: var(--font-body);
     font-size: var(--font-s);
     color: var(--black-opacity);
+    font-weight: 300;
   }
 `;
