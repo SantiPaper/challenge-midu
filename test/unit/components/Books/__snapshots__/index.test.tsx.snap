@@ -1,0 +1,96 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Componente books > Renderizan todas las cards 1`] = `
+<div>
+  <section
+    class="sc-bcPKhP itOLSE"
+  >
+    <article
+      class="book__container"
+    >
+      <img
+        alt=""
+        class="book__image"
+        src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1273763400i/8189620.jpg"
+        width="120"
+      />
+      <div
+        class="book__card"
+      >
+        <h2
+          class="book__title"
+        >
+          Juego de Tronos
+        </h2>
+        <div
+          class="book__container-info"
+        >
+          <p>
+            George R. R. Martin
+          </p>
+          <p>
+            1996
+          </p>
+        </div>
+        <div
+          class="book__container-buttons"
+        >
+          <button
+            class="book__button-ls"
+          >
+            Agregar a lista de lectura
+          </button>
+          <button
+            class="book__button-wm"
+          >
+            Ver más
+          </button>
+        </div>
+      </div>
+    </article>
+    <article
+      class="book__container"
+    >
+      <img
+        alt=""
+        class="book__image"
+        src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1550337333i/15868.jpg"
+        width="120"
+      />
+      <div
+        class="book__card"
+      >
+        <h2
+          class="book__title"
+        >
+          Harry Potter y la pie...
+        </h2>
+        <div
+          class="book__container-info"
+        >
+          <p>
+            J.K. Rowling
+          </p>
+          <p>
+            1997
+          </p>
+        </div>
+        <div
+          class="book__container-buttons"
+        >
+          <button
+            class="book__button-ls"
+          >
+            Agregar a lista de lectura
+          </button>
+          <button
+            class="book__button-wm"
+          >
+            Ver más
+          </button>
+        </div>
+      </div>
+    </article>
+  </section>
+</div>
+`;
