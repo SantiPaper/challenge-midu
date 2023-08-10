@@ -6,7 +6,7 @@ export const StyledHeader = styled.header`
       display: flex;
       justify-content: center;
       gap: 6rem;
-      font-size: var(--font-xxs);
+      font-size: var(--font-xs);
       margin-top: 3rem;
       list-style: none;
       text-transform: uppercase;
@@ -15,7 +15,7 @@ export const StyledHeader = styled.header`
     &__link {
       text-decoration: none;
       color: inherit;
-      padding: 1rem 2rem;
+      padding: 1em 2em;
       border: 2px solid transparent;
       border-radius: 1rem;
       display: inline-block;
