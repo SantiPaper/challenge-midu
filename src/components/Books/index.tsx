@@ -6,15 +6,11 @@ export const Books = () => {
 
   return (
     <StyleBookSection>
-      {state.books.map((book) => (
+      {state.filteredBooks.map((book) => (
         <article className="book__container" key={book.ISBN}>
           <img className="book__image" src={book.cover} width={120} alt="" />
           <div className="book__card">
-            <h2 className="book__title">
-              {book.title.length < 25
-                ? book.title
-                : book.title.slice(0, 21).concat("...")}
-            </h2>
+            <h2 className="book__title">{book.title}</h2>
             <div className="book__container-info">
               <p>{book.author.name}</p>
               <p>{book.year}</p>
