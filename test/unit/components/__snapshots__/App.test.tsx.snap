@@ -1,0 +1,110 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Componente App > Renderiza toda la pagina 1`] = `
+<div>
+  <div
+    class="sc-bcPKhP evQUrr"
+  >
+    <header
+      class="sc-grXZZQ gYGkhX"
+    >
+      <nav>
+        <ul
+          class="header__ul"
+        >
+          <li>
+            <a
+              class="header__link"
+              href="#"
+            >
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a
+              class="header__link"
+              href="#"
+            >
+              Lista de lectura
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main
+      class="sc-dkjKgF"
+    >
+      <section
+        class="sc-hLclGa fgAhUg"
+      >
+        <h1
+          class="hero__title"
+        >
+          Midubooks
+        </h1>
+        <p
+          class="hero__description"
+        >
+          Encontrá todos tus libros deseados
+        </p>
+        <a
+          class="hero__button"
+          href="#"
+        >
+          ¡Comenzá ya!
+        </a>
+      </section>
+      <form>
+        <label
+          for="Búsqueda"
+        >
+          Buscar libro
+        </label>
+        <input
+          aria-label="Buscar libro por nombre"
+          id="Búsqueda"
+          type="text"
+        />
+        <label
+          for="Genero"
+        >
+          Filtrar por genero
+        </label>
+        <select
+          id="Gereno"
+          name=""
+        >
+          <option
+            value=""
+          >
+            Todos
+          </option>
+          <option
+            value="Ciencia ficción"
+          >
+            Ciencia ficción
+          </option>
+          <option
+            value="Fantasía"
+          >
+            Fantasía
+          </option>
+          <option
+            value="Terror"
+          >
+            Terror
+          </option>
+          <option
+            value="Zombies"
+          >
+            Zombies
+          </option>
+        </select>
+      </form>
+      <section
+        class="sc-eDnVMP bTuAlC"
+      />
+    </main>
+  </div>
+</div>
+`;
