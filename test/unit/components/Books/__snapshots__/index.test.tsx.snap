@@ -3,7 +3,7 @@
 exports[`Componente books > Renderizan todas las cards 1`] = `
 <div>
   <section
-    class="sc-bcPKhP itOLSE"
+    class="sc-bcPKhP cnNqQw"
   >
     <article
       class="book__container"
@@ -63,7 +63,7 @@ exports[`Componente books > Renderizan todas las cards 1`] = `
         <h2
           class="book__title"
         >
-          Harry Potter y la pie...
+          Harry Potter y la piedra filosofal
         </h2>
         <div
           class="book__container-info"
