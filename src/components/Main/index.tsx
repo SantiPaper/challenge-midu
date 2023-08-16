@@ -1,14 +1,14 @@
 import { StyledMain } from "./style";
-import { Hero } from "../Hero";
 import { Books } from "../Books";
 import { Filters } from "../Filters";
+import { LectureList } from "../LectureList";
 
 export const Main = () => {
   return (
     <StyledMain>
-      <Hero />
       <Filters />
       <Books />
+      <LectureList />
     </StyledMain>
   );
 };
