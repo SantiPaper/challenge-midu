@@ -24,12 +24,59 @@ export const Provider = ({ children }: PropsWithChildren) => {
     });
   };
 
+  const getBySearch = (search: string) => {
+    dispatch({
+      type: "GET_BY_SEARCH",
+      payload: search
+        ? state.books.filter((book) =>
+            book.title.toLowerCase().includes(search.toLowerCase())
+          )
+        : state.books,
+    });
+  };
+
+  const getByPages = (pages: number) => {
+    dispatch({
+      type: "GET_BY_SEARCH",
+      payload: state.books.filter((book) => book.pages > pages),
+    });
+  };
+
+  const addToLectureList = (book: Book) => {
+    dispatch({
+      type: "ADD_TO_LECTURE_LIST",
+      payload: book,
+    });
+  };
+
+  const removeFromLectureList = (book: Book) => {
+    dispatch({
+      type: "REMOVE_FROM_LECTURE_LIST",
+      payload: book.ISBN,
+    });
+  };
+
+  const setDetail = (book: Book) => {
+    dispatch({
+      type: "SET_DETAIL",
+      payload: book,
+    });
+  };
+
   return (
     <BooksContext.Provider
       value={{
         state,
         addBooks,
         getByGenre,
+        getBySearch,
+        getByPages,
+        addToLectureList,
+        removeFromLectureList,
+        /* showDetail,
+        detail,
+        mostrarModal, */
+        setDetail,
       }}
     >
       {children}
