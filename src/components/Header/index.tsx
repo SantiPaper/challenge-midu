@@ -1,4 +1,5 @@
 import { StyledHeader } from "./style";
+import { Hero } from "../Hero";
 
 export const Header = () => {
   return (
@@ -17,6 +18,9 @@ export const Header = () => {
           </li>
         </ul>
       </nav>
+      <div className="hero-container">
+        <Hero />
+      </div>
     </StyledHeader>
   );
 };

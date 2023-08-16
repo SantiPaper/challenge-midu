@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const StyledHeader = styled.header`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
   .header {
     &__ul {
       display: flex;
@@ -30,5 +33,11 @@ export const StyledHeader = styled.header`
         box-shadow: none;
       }
     }
+  }
+  .hero-container {
+    min-height: 75rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 `;
