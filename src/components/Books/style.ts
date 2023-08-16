@@ -2,9 +2,23 @@ import styled from "styled-components";
 
 export const StyleBookSection = styled.section`
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 4rem 2rem;
+  flex-direction: column;
+  align-items: center;
+
+  .books__length {
+    font-size: var(--font-m);
+    margin: 5rem;
+    font-family: var(--font-heading);
+    padding: 3rem 6rem;
+  }
+
+  .container__books {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem 2rem;
+    margin-bottom: 4rem;
+  }
   .book {
     &__container {
       display: flex;
