@@ -4,6 +4,7 @@ import { Main } from "./components/Main";
 import { useEffect } from "react";
 import { getBooks } from "./api";
 import { useBookContext } from "./hooks/useBookContext";
+import { Footer } from "./components/Footer";
 
 function App() {
   const { addBooks } = useBookContext();
@@ -17,6 +18,7 @@ function App() {
         <Header />
         <Main />
       </StyledContainer>
+      <Footer />
     </>
   );
 }
