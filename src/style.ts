@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledContainer = styled.div`
   max-width: 125rem;
-  min-height: 100vh;
+
   margin: auto;
   .header {
     &__ul {
