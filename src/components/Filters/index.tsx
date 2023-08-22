@@ -1,7 +1,6 @@
-import { useBookContext } from "../../hooks/useBookContext";
-import { ChangeEvent, useRef } from "react";
 import { Genre } from "../../types/context";
 import { StyledSection } from "./style";
+import { useFilters } from "../../hooks/useFilters";
 
 const genres: Genre[] = [
   "",
@@ -12,37 +11,12 @@ const genres: Genre[] = [
 ];
 
 export const Filters = () => {
-  const inputRef = useRef<HTMLInputElement>(null);
-  const pagesRef = useRef<HTMLInputElement>(null);
-  const { getByGenre, getBySearch, getByPages, state } = useBookContext();
-
-  const onSelect = (ev: ChangeEvent<HTMLSelectElement>) => {
-    getByGenre(ev.target.value as Genre);
-    inputRef.current!.value = "";
-  };
-
-  const onSearch = (ev: ChangeEvent<HTMLInputElement>) => {
-    getBySearch(ev.target.value);
-  };
-
-  const onPageChange = (ev: ChangeEvent<HTMLInputElement>) => {
-    getByPages(Number(ev.target.value));
-  };
-
-  const getMaxPages = () => {
-    const books = state.books;
-    let maxPages = 0;
-    for (let i = 0; i < books.length; i++) {
-      if (maxPages < books[i].pages) {
-        maxPages = books[i].pages;
-      }
-    }
-    return maxPages;
-  };
+  const { getMaxPages, inputRef, onPageChange, onSearch, onSelect, pagesRef } =
+    useFilters();
 
   return (
     <StyledSection>
-      <form className="form">
+      <form id="form" className="form">
         <div className="form__div__input">
           <label className="form__label" htmlFor="Búsqueda">
             Búsqueda
@@ -53,7 +27,7 @@ export const Filters = () => {
             type="text"
             id="Búsqueda"
             ref={inputRef}
-            placeholder="Búsqueda"
+            placeholder="Harry potter y la..."
             className="form__input__search"
           />
         </div>
@@ -84,6 +58,7 @@ export const Filters = () => {
             Filtrar por paginas
           </label>
           <input
+            className="form__select"
             onChange={onPageChange}
             id="pages"
             type="range"
@@ -92,7 +67,7 @@ export const Filters = () => {
             ref={pagesRef}
           />
           <p>
-            {pagesRef.current?.value} - {getMaxPages()}
+            {pagesRef.current?.value} paginas - {getMaxPages()} paginas
           </p>
         </div>
       </form>
