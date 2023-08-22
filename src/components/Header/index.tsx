@@ -1,5 +1,6 @@
 import { StyledHeader } from "./style";
 import { Hero } from "../Hero";
+import { Link } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -7,14 +8,14 @@ export const Header = () => {
       <nav>
         <ul className="header__ul">
           <li>
-            <a className="header__link" href="/">
+            <Link className="header__link" to="/">
               Inicio
-            </a>
+            </Link>
           </li>
           <li>
-            <a className="header__link" href="/reading-list">
+            <Link className="header__link" to="/reading-list">
               Lista de lectura
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
