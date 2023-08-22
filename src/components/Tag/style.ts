@@ -9,4 +9,9 @@ export const StyledTag = styled.div`
     font-size: var(--font-xs);
     color: #370172;
   }
+
+  @media (max-width: 650px) {
+    margin: auto;
+    margin-bottom: 1rem;
+  }
 `;
