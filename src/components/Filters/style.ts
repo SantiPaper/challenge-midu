@@ -2,34 +2,46 @@ import styled from "styled-components";
 
 export const StyledSection = styled.section`
   display: flex;
-  justify-content: space-around;
-  margin: 4rem;
+  justify-content: center;
+  background-color: transparent;
+  padding: 1rem;
+  margin-bottom: 3rem;
+  max-width: 120rem;
+
   .form {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: flex-end;
     gap: 5rem;
+    border-radius: 1rem;
 
     &__div__input {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
-      width: 20rem;
     }
     &__label {
       font-size: var(--font-xs);
-      font-weight: 300;
+      font-weight: 400;
       margin-bottom: 1rem;
     }
-    &__input__search {
+    &__input__search,
+    &__select {
       font-size: var(--font-xs);
       border: 1px solid black;
       border-radius: 1rem;
-      box-shadow: 0.4rem 0.4rem 0 rgba(0, 0, 0, 1);
       width: 20rem;
-      padding: 0.5rem 1.5rem;
+      padding: 1rem 2rem;
+      box-shadow: 0.4rem 0.4rem 0 black;
+      border-radius: 1rem;
+      background-color: white;
+      font-family: inherit;
+    }
+
+    &__input__search {
+      width: 25rem;
     }
 
     &__select__option {
@@ -37,14 +49,22 @@ export const StyledSection = styled.section`
     }
 
     &__select {
-      width: 100%;
-      padding: 0.5rem;
-      margin-top: 0.5rem;
-      font-size: var(--font-xs);
-      background-color: white;
-      border: none;
-      box-shadow: 0.4rem 0.4rem 0 black;
-      border-radius: 1rem;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      align-items: center;
+
+      &__label {
+        display: none;
+      }
+      &__input__search {
+        width: 20rem;
+      }
     }
   }
 `;

@@ -43,4 +43,27 @@ export const StyledHero = styled.section`
       }
     }
   }
+
+  @media (max-width: 600px) {
+    .hero {
+      &__title {
+        font-size: var(--font-l);
+        font-family: var(--font-heading);
+      }
+      &__description {
+        font-size: var(--font-xs);
+        font-weight: 300;
+      }
+      &__button {
+        display: none;
+      }
+    }
+  }
+  @media (max-width: 400px) {
+    .hero {
+      &__title {
+        font-size: 5.5rem;
+      }
+    }
+  }
 `;

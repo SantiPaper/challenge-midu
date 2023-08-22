@@ -6,10 +6,11 @@ export const StyleBookSection = styled.section`
   align-items: center;
 
   .books__length {
-    font-size: var(--font-m);
-    margin: 5rem;
-    font-family: var(--font-heading);
-    padding: 3rem 6rem;
+    font-size: var(--font-l);
+    margin: 5rem 0;
+    font-family: var(--font-body);
+    font-weight: 200;
+    padding: 3rem 0rem;
   }
 
   .container__books {
@@ -75,5 +76,41 @@ export const StyleBookSection = styled.section`
     font-size: var(--font-s);
     color: var(--black-opacity);
     font-weight: 300;
+  }
+
+  @media (max-width: 650px) {
+    .book {
+      &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        width: auto;
+        padding: 1rem;
+        text-align: center;
+      }
+
+      &__image {
+        margin-right: 0;
+        border: 2px solid var(--black);
+        border-radius: 0.9rem;
+      }
+      &__title {
+        max-width: 16ch;
+        font-size: var(--font-s);
+      }
+      &__container-info {
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 1rem;
+      }
+      &__container-buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+      p {
+        font-size: var(--font-xs);
+      }
+    }
   }
 `;

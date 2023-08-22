@@ -21,6 +21,27 @@ export const StyledFooter = styled.section`
     a {
       color: white;
       text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .email {
+      font-size: var(--font-m);
+    }
+    .socials {
+      font-size: var(--font-s);
+    }
+  }
+
+  @media (max-width: 400px) {
+    .email {
+      font-size: var(--font-s);
+    }
+    .socials {
+      font-size: var(--font-xs);
     }
   }
 `;

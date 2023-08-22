@@ -58,7 +58,7 @@ export const StyleDetail = styled.div`
     gap: 2rem;
 
     p {
-      font-size: var(--font-xs);
+      font-size: var(--font-s);
     }
 
     &__img {
@@ -82,14 +82,54 @@ export const StyleDetail = styled.div`
     border-radius: 0 2rem 0;
   }
   .card__add-lecture {
-    margin-top: auto;
-    margin-bottom: 1px;
-    padding: 2rem 4rem;
+    padding: 0.8rem 2rem;
     background-color: var(--primary-200);
-    border: none;
     border-radius: 1rem;
     border: 2px solid black;
-    font-size: var(--font-xs);
+    font-family: inherit;
+    box-shadow: 0.3rem 0.3rem 0 rgba(0, 0, 0, 0.25);
     cursor: pointer;
+    font-weight: 500;
+    font-size: var(--font-xs);
+    margin-top: auto;
+  }
+
+  @media (max-width: 1000px) {
+    .modal {
+      padding: 2.5rem 5rem;
+      img {
+        width: 10rem;
+      }
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .container-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.5rem;
+      }
+    }
+  }
+
+  @media (max-width: 600px) {
+    .modal {
+      padding: 1rem 1rem;
+
+      .card {
+        p {
+          font-size: var(--font-xs);
+          width: 28ch;
+        }
+        &__title {
+          font-size: var(--font-s);
+        }
+      }
+      .card__add-lecture {
+        font-size: var(--font-xs);
+      }
+    }
   }
 `;
