@@ -1,34 +1,24 @@
-import { useBookContext } from "../../hooks/useBookContext";
 import { StyleBookSection } from "./style";
 import type { Book } from "../../types/books";
 import { BookDetail } from "../BookDetail";
-import { useState } from "react";
 import { BooksMap } from "../BooksMap";
+import { useBooks } from "../../hooks/useBook";
 
 type Props = {
   value: Book[];
 };
 
 export const Books = ({ value }: Props) => {
-  const { setDetail } = useBookContext();
-  const [showDetail, setShowDetail] = useState(false);
-
-  const closeModal = () => {
-    setShowDetail(false);
-  };
-
-  const openModal = (book: Book) => {
-    setDetail(book);
-    setShowDetail(true);
-  };
+  const { showDetail, openModal, closeModal } = useBooks();
 
   return (
     <StyleBookSection>
-      <h2 className="books__length">Libros disponibles {value.length}</h2>
       <div className="container__books">
-        {value.map((book) => (
-          <BooksMap book={book} openModal={openModal} />
-        ))}
+        {value.length !== 0 ? (
+          value.map((book) => <BooksMap book={book} openModal={openModal} />)
+        ) : (
+          <p>No se encontraron libros en la lista de lectura</p>
+        )}
         {showDetail && <BookDetail onClose={closeModal} />}
       </div>
     </StyleBookSection>
