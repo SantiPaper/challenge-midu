@@ -5,14 +5,16 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <StyledContainer>
-        <div className="contact">
-          <h2 className="email">gonsanto07@yahoo.com</h2>
-          <p className="socials">
-            <a href="https://www.linkedin.com/in/santiagovitelli/">Linkedin</a>{" "}
-            <a href="https://github.com/SantiPaper">Github</a>{" "}
-            <a href="https://twitter.com/SantDevelopment">Twitter</a>
-          </p>
-        </div>
+        <a href="mailto:gonsanto07@yahoo.com" className="email">
+          gonsanto07
+          <wbr />
+          @yahoo.com
+        </a>
+        <p className="socials">
+          <a href="https://www.linkedin.com/in/santiagovitelli/">Linkedin</a>{" "}
+          <a href="https://github.com/SantiPaper">Github</a>{" "}
+          <a href="https://twitter.com/SantDevelopment">Twitter</a>
+        </p>
       </StyledContainer>
     </StyledFooter>
   );
