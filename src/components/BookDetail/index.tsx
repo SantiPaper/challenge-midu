@@ -61,8 +61,8 @@ export const BookDetail = ({ onClose }: Props) => {
                 onClick={() => onClick(state.detail[0])}
               >
                 {state.readingList.includes(state.detail[0])
-                  ? "Quitar de la lista de lectura"
-                  : "Agregar a la lista de lectura"}
+                  ? "Quitar de lista de lectura"
+                  : "Agregar a lista de lectura"}
               </button>
             </div>
           </article>

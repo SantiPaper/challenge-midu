@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const StyledHeader = styled.header`
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
   .header {
     &__ul {
       display: flex;
@@ -35,7 +34,7 @@ export const StyledHeader = styled.header`
     }
   }
   .hero-container {
-    min-height: 75rem;
+    min-height: 45rem;
     display: flex;
     align-items: center;
     justify-content: center;
