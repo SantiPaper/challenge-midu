@@ -5,10 +5,10 @@ export const Footer = () => {
   return (
     <StyledFooter>
       <StyledContainer>
-        <a href="mailto:gonsanto07@yahoo.com" className="email">
-          gonsanto07
+        <a href="mailto:santiagovitelli01@gmail.com" className="email">
+          santiagovitelli01
           <wbr />
-          @yahoo.com
+          @gmail.com
         </a>
         <p className="socials">
           <a href="https://www.linkedin.com/in/santiagovitelli/">Linkedin</a>{" "}
