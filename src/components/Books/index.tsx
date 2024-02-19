@@ -13,11 +13,15 @@ export const Books = ({ value }: Props) => {
 
   return (
     <StyleBookSection>
-      <div className="container__books">
+      <div
+        className={`container__books ${
+          value.length === 0 ? "container__padding" : ""
+        }`}
+      >
         {value.length !== 0 ? (
           value.map((book) => <BooksMap book={book} openModal={openModal} />)
         ) : (
-          <p>No se encontraron libros en la lista de lectura</p>
+          <p className="not-find">No se encontraron libros</p>
         )}
         {showDetail && <BookDetail onClose={closeModal} />}
       </div>

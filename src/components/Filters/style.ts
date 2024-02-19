@@ -34,7 +34,6 @@ export const StyledSection = styled.section`
       border-radius: 1rem;
       width: 20rem;
       padding: 1rem 2rem;
-      box-shadow: 0.4rem 0.4rem 0 black;
       border-radius: 1rem;
       background-color: white;
       font-family: inherit;

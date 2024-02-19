@@ -13,13 +13,24 @@ export const StyleBookSection = styled.section`
     padding: 3rem 0rem;
   }
 
-  .container__books {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 4rem 2rem;
-    margin-bottom: 4rem;
+  .container {
+    &__books {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 4rem 2rem;
+      margin-bottom: 4rem;
+    }
+
+    &__padding {
+      padding: 6rem;
+    }
   }
+
+  .not-find {
+    font-size: 3rem;
+  }
+
   .book {
     &__container {
       display: flex;
